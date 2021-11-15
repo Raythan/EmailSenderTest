@@ -6,19 +6,23 @@ using System.Net.Mail;
 using System.Reflection;
 using System.Windows.Forms;
 using System.Text;
+using System.Diagnostics;
 
 namespace TesteEnvioEmail
 {
     public partial class formTesteEnvioEmail : Form
     {
         private static readonly string assemblyPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
-            fileConfig = "f0fa8b1b85c3d69145a410aad5ef6594e27b9fc8.txt"; // jsonConfig (sha1)
+            fileConfig = "f0fa8b1b85c3d69145a410aad5ef6594e27b9fc8.txt", // jsonConfig (sha1)
+            fileVersion = FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileVersion;
 
         private string combinedConfigPath = $"{assemblyPath}\\{fileConfig}";
         private Configuracao configuracao;
+
         public formTesteEnvioEmail()
         {
             InitializeComponent();
+            Text = $"Teste de Envio de Emails v{fileVersion}";
             CarregarArquivoConfiguracao();
         }
 
