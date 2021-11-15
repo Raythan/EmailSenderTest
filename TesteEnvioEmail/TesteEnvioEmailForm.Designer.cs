@@ -1,6 +1,6 @@
 ﻿namespace TesteEnvioEmail
 {
-    partial class TesteEnvioEmailForm
+    partial class formTesteEnvioEmail
     {
         /// <summary>
         /// Required designer variable.
@@ -28,139 +28,140 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.Servidor = new System.Windows.Forms.TextBox();
-            this.Porta = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Usuario = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Senha = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.EmailEnvio = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.RequerAutenticacao = new System.Windows.Forms.CheckBox();
-            this.RequerConexaoSSL = new System.Windows.Forms.CheckBox();
-            this.EmailDestinatario = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblServidor = new System.Windows.Forms.Label();
+            this.txtServidor = new System.Windows.Forms.TextBox();
+            this.txtPorta = new System.Windows.Forms.TextBox();
+            this.lblPorta = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.txtEmailEnvio = new System.Windows.Forms.TextBox();
+            this.lblEmailEnvio = new System.Windows.Forms.Label();
+            this.chkRequerAutenticacao = new System.Windows.Forms.CheckBox();
+            this.chkRequerConexaoSSL = new System.Windows.Forms.CheckBox();
+            this.txtEmailDestinatario = new System.Windows.Forms.TextBox();
+            this.lblDestinatario = new System.Windows.Forms.Label();
             this.btnEnviar = new System.Windows.Forms.Button();
+            this.btnConfiguracao = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblServidor
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Servidor/Host";
+            this.lblServidor.AutoSize = true;
+            this.lblServidor.Location = new System.Drawing.Point(12, 9);
+            this.lblServidor.Name = "lblServidor";
+            this.lblServidor.Size = new System.Drawing.Size(73, 13);
+            this.lblServidor.TabIndex = 0;
+            this.lblServidor.Text = "Servidor/Host";
             // 
-            // Servidor
+            // txtServidor
             // 
-            this.Servidor.Location = new System.Drawing.Point(114, 6);
-            this.Servidor.Name = "Servidor";
-            this.Servidor.Size = new System.Drawing.Size(411, 20);
-            this.Servidor.TabIndex = 2;
+            this.txtServidor.Location = new System.Drawing.Point(114, 6);
+            this.txtServidor.Name = "txtServidor";
+            this.txtServidor.Size = new System.Drawing.Size(411, 20);
+            this.txtServidor.TabIndex = 2;
             // 
-            // Porta
+            // txtPorta
             // 
-            this.Porta.Location = new System.Drawing.Point(114, 32);
-            this.Porta.Name = "Porta";
-            this.Porta.Size = new System.Drawing.Size(411, 20);
-            this.Porta.TabIndex = 4;
+            this.txtPorta.Location = new System.Drawing.Point(114, 32);
+            this.txtPorta.Name = "txtPorta";
+            this.txtPorta.Size = new System.Drawing.Size(411, 20);
+            this.txtPorta.TabIndex = 4;
             // 
-            // label2
+            // lblPorta
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Porta";
+            this.lblPorta.AutoSize = true;
+            this.lblPorta.Location = new System.Drawing.Point(12, 35);
+            this.lblPorta.Name = "lblPorta";
+            this.lblPorta.Size = new System.Drawing.Size(32, 13);
+            this.lblPorta.TabIndex = 3;
+            this.lblPorta.Text = "Porta";
             // 
-            // Usuario
+            // txtUsuario
             // 
-            this.Usuario.Location = new System.Drawing.Point(114, 58);
-            this.Usuario.Name = "Usuario";
-            this.Usuario.Size = new System.Drawing.Size(411, 20);
-            this.Usuario.TabIndex = 6;
+            this.txtUsuario.Location = new System.Drawing.Point(114, 58);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(411, 20);
+            this.txtUsuario.TabIndex = 6;
             // 
-            // label3
+            // lblUsuario
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 61);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Usuário";
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(12, 61);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(43, 13);
+            this.lblUsuario.TabIndex = 5;
+            this.lblUsuario.Text = "Usuário";
             // 
-            // Senha
+            // txtSenha
             // 
-            this.Senha.Location = new System.Drawing.Point(114, 84);
-            this.Senha.Name = "Senha";
-            this.Senha.PasswordChar = '*';
-            this.Senha.Size = new System.Drawing.Size(411, 20);
-            this.Senha.TabIndex = 8;
+            this.txtSenha.Location = new System.Drawing.Point(114, 84);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(411, 20);
+            this.txtSenha.TabIndex = 8;
             // 
-            // label4
+            // lblSenha
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 87);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Senha";
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Location = new System.Drawing.Point(12, 87);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(38, 13);
+            this.lblSenha.TabIndex = 7;
+            this.lblSenha.Text = "Senha";
             // 
-            // EmailEnvio
+            // txtEmailEnvio
             // 
-            this.EmailEnvio.Location = new System.Drawing.Point(114, 110);
-            this.EmailEnvio.Name = "EmailEnvio";
-            this.EmailEnvio.Size = new System.Drawing.Size(411, 20);
-            this.EmailEnvio.TabIndex = 10;
+            this.txtEmailEnvio.Location = new System.Drawing.Point(114, 110);
+            this.txtEmailEnvio.Name = "txtEmailEnvio";
+            this.txtEmailEnvio.Size = new System.Drawing.Size(411, 20);
+            this.txtEmailEnvio.TabIndex = 10;
             // 
-            // label5
+            // lblEmailEnvio
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 113);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Email de Envio";
+            this.lblEmailEnvio.AutoSize = true;
+            this.lblEmailEnvio.Location = new System.Drawing.Point(12, 113);
+            this.lblEmailEnvio.Name = "lblEmailEnvio";
+            this.lblEmailEnvio.Size = new System.Drawing.Size(77, 13);
+            this.lblEmailEnvio.TabIndex = 9;
+            this.lblEmailEnvio.Text = "Email de Envio";
             // 
-            // RequerAutenticacao
+            // chkRequerAutenticacao
             // 
-            this.RequerAutenticacao.AutoSize = true;
-            this.RequerAutenticacao.Location = new System.Drawing.Point(114, 136);
-            this.RequerAutenticacao.Name = "RequerAutenticacao";
-            this.RequerAutenticacao.Size = new System.Drawing.Size(163, 17);
-            this.RequerAutenticacao.TabIndex = 11;
-            this.RequerAutenticacao.Text = "Servidor requer autenticação";
-            this.RequerAutenticacao.UseVisualStyleBackColor = true;
+            this.chkRequerAutenticacao.AutoSize = true;
+            this.chkRequerAutenticacao.Location = new System.Drawing.Point(114, 136);
+            this.chkRequerAutenticacao.Name = "chkRequerAutenticacao";
+            this.chkRequerAutenticacao.Size = new System.Drawing.Size(163, 17);
+            this.chkRequerAutenticacao.TabIndex = 11;
+            this.chkRequerAutenticacao.Text = "Servidor requer autenticação";
+            this.chkRequerAutenticacao.UseVisualStyleBackColor = true;
             // 
-            // RequerConexaoSSL
+            // chkRequerConexaoSSL
             // 
-            this.RequerConexaoSSL.AutoSize = true;
-            this.RequerConexaoSSL.Location = new System.Drawing.Point(114, 159);
-            this.RequerConexaoSSL.Name = "RequerConexaoSSL";
-            this.RequerConexaoSSL.Size = new System.Drawing.Size(165, 17);
-            this.RequerConexaoSSL.TabIndex = 12;
-            this.RequerConexaoSSL.Text = "Servidor requer conexão SSL";
-            this.RequerConexaoSSL.UseVisualStyleBackColor = true;
+            this.chkRequerConexaoSSL.AutoSize = true;
+            this.chkRequerConexaoSSL.Location = new System.Drawing.Point(114, 159);
+            this.chkRequerConexaoSSL.Name = "chkRequerConexaoSSL";
+            this.chkRequerConexaoSSL.Size = new System.Drawing.Size(165, 17);
+            this.chkRequerConexaoSSL.TabIndex = 12;
+            this.chkRequerConexaoSSL.Text = "Servidor requer conexão SSL";
+            this.chkRequerConexaoSSL.UseVisualStyleBackColor = true;
             // 
-            // EmailDestinatario
+            // txtEmailDestinatario
             // 
-            this.EmailDestinatario.Location = new System.Drawing.Point(114, 191);
-            this.EmailDestinatario.Name = "EmailDestinatario";
-            this.EmailDestinatario.Size = new System.Drawing.Size(411, 20);
-            this.EmailDestinatario.TabIndex = 14;
+            this.txtEmailDestinatario.Location = new System.Drawing.Point(114, 191);
+            this.txtEmailDestinatario.Name = "txtEmailDestinatario";
+            this.txtEmailDestinatario.Size = new System.Drawing.Size(411, 20);
+            this.txtEmailDestinatario.TabIndex = 14;
             // 
-            // label6
+            // lblDestinatario
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 194);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 13);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Destinatário";
+            this.lblDestinatario.AutoSize = true;
+            this.lblDestinatario.Location = new System.Drawing.Point(12, 194);
+            this.lblDestinatario.Name = "lblDestinatario";
+            this.lblDestinatario.Size = new System.Drawing.Size(63, 13);
+            this.lblDestinatario.TabIndex = 13;
+            this.lblDestinatario.Text = "Destinatário";
             // 
             // btnEnviar
             // 
@@ -172,29 +173,40 @@
             this.btnEnviar.UseVisualStyleBackColor = true;
             this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
-            // TesteEnvioEmailForm
+            // btnConfiguracao
+            // 
+            this.btnConfiguracao.Location = new System.Drawing.Point(369, 226);
+            this.btnConfiguracao.Name = "btnConfiguracao";
+            this.btnConfiguracao.Size = new System.Drawing.Size(75, 23);
+            this.btnConfiguracao.TabIndex = 16;
+            this.btnConfiguracao.Text = "Salvar";
+            this.btnConfiguracao.UseVisualStyleBackColor = true;
+            this.btnConfiguracao.Click += new System.EventHandler(this.btnConfiguracao_Click);
+            // 
+            // formTesteEnvioEmail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(545, 256);
+            this.Controls.Add(this.btnConfiguracao);
             this.Controls.Add(this.btnEnviar);
-            this.Controls.Add(this.EmailDestinatario);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.RequerConexaoSSL);
-            this.Controls.Add(this.RequerAutenticacao);
-            this.Controls.Add(this.EmailEnvio);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.Senha);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.Usuario);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.Porta);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.Servidor);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtEmailDestinatario);
+            this.Controls.Add(this.lblDestinatario);
+            this.Controls.Add(this.chkRequerConexaoSSL);
+            this.Controls.Add(this.chkRequerAutenticacao);
+            this.Controls.Add(this.txtEmailEnvio);
+            this.Controls.Add(this.lblEmailEnvio);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.lblSenha);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.txtPorta);
+            this.Controls.Add(this.lblPorta);
+            this.Controls.Add(this.txtServidor);
+            this.Controls.Add(this.lblServidor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
-            this.Name = "TesteEnvioEmailForm";
+            this.Name = "formTesteEnvioEmail";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Teste de Envio de Emails";
@@ -205,21 +217,22 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Servidor;
-        private System.Windows.Forms.TextBox Porta;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Usuario;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox Senha;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox EmailEnvio;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox RequerAutenticacao;
-        private System.Windows.Forms.CheckBox RequerConexaoSSL;
-        private System.Windows.Forms.TextBox EmailDestinatario;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblServidor;
+        private System.Windows.Forms.TextBox txtServidor;
+        private System.Windows.Forms.TextBox txtPorta;
+        private System.Windows.Forms.Label lblPorta;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Label lblSenha;
+        private System.Windows.Forms.TextBox txtEmailEnvio;
+        private System.Windows.Forms.Label lblEmailEnvio;
+        private System.Windows.Forms.CheckBox chkRequerAutenticacao;
+        private System.Windows.Forms.CheckBox chkRequerConexaoSSL;
+        private System.Windows.Forms.TextBox txtEmailDestinatario;
+        private System.Windows.Forms.Label lblDestinatario;
         private System.Windows.Forms.Button btnEnviar;
+        private System.Windows.Forms.Button btnConfiguracao;
     }
 }
 

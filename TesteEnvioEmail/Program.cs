@@ -15,7 +15,7 @@ namespace TesteEnvioEmail
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TesteEnvioEmailForm());
+            Application.Run(new formTesteEnvioEmail());
         }
     }
 }
