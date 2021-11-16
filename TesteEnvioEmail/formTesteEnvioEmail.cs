@@ -72,9 +72,9 @@ namespace TesteEnvioEmail
             }
         }
 
-        private void btnConfiguracao_Click(object sender, EventArgs e) => SalvarConfiguracao();
+        private void btnConfiguracao_Click(object sender, EventArgs e) => SalvarConfiguracao(true);
 
-        private void SalvarConfiguracao()
+        private void SalvarConfiguracao(bool fromButton = false)
         {
             configuracao = new Configuracao(txtServidor.Text, txtPorta.Text, txtUsuario.Text, txtSenha.Text, txtEmailEnvio.Text,
                 txtEmailDestinatario.Text, chkRequerAutenticacao.Checked, chkRequerConexaoSSL.Checked);
@@ -83,7 +83,8 @@ namespace TesteEnvioEmail
                 using (var sw = new StreamWriter(combinedConfigPath))
                     sw.Write(Base64Encode(JsonConvert.SerializeObject(configuracao)));
 
-                MessageBox.Show("Configuração salva com sucesso.", "Configuração", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                if (fromButton)
+                    MessageBox.Show("Configuração salva com sucesso.", "Configuração", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
             else
             {
